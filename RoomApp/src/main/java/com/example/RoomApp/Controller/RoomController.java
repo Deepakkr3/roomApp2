@@ -54,8 +54,19 @@ public class RoomController {
     }
     //get room by price
     @GetMapping("price/{price}/")
+
+
+
     public List<RoomApp> getbyprice(@PathVariable double p)
     {
         return roomService.getbyprice(p);
     }
+
+
+    @GetMapping("test")
+    public String testmap(){
+        return "hellow testing";
+    }
+
+
 }
